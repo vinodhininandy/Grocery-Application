@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Promotion Image -->
+
+    <ImageView
+        android:id="@+id/promotionImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vegetable"
+        android:contentDescription="second Promotion Image" />
+
+    <!-- Promotion Title -->
+
+
+    <TextView
+        android:id="@+id/promotionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promotionImage"
+        android:layout_marginTop="16dp"
+        android:text="Special Offers"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+    <!-- Promotion Description -->
+    <TextView
+        android:id="@+id/promotionDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promotionTitle"
+        android:layout_marginTop="8dp"
+        android:text="Don't miss out on our exclusive offer. Limited time only!"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <!-- Call to Action Button -->
+
+    <Button
+        android:id="@+id/actionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@id/promotionDescription"
+        android:layout_marginTop="2dp"
+        android:background="#FEB20A"
+        android:text="SHOP NOW"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/promotionImage2"
+        android:layout_width="395dp"
+        android:layout_height="288dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/offer"
+        android:contentDescription="Promotion Image" />
+
+</RelativeLayout>

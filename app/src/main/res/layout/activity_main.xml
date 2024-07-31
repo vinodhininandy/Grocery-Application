@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Welcome to Daily Grocery"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <!-- Use a LinearLayout with vertical orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <!-- Add your existing buttons here -->
+
+        <Button
+            android:id="@+id/btnMenu"
+            style="@style/DashboardButton"
+            android:layout_width="match_parent"
+            android:background="#E9AD03"
+            android:text="SHOP" />
+
+
+
+        <Button
+            android:id="@+id/btnPromotions"
+            style="@style/DashboardButton"
+            android:layout_width="match_parent"
+            android:background="#E9AD03"
+            android:text="OFFERS" />
+
+
+
+        <!-- Add the new card for Today's Offers -->
+
+
+        <!-- Add a descriptive TextView to fill the remaining space -->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/detailItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food_img_1" />
+
+    <TextView
+        android:id="@+id/detailItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/detailItemImage"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/detailItemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/detailItemName"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/detailItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/detailItemDescription"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/orderNowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        android:layout_below="@id/detailItemPrice"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>
